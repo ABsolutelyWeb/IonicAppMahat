@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    
+    <title>Mahat the Evil Genie</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="mahat">
+
+    <ion-pane>
+
+      <!-- Allows Mahat to be moved up and down by the user. We make scroll false to prevent this. -->
+      <ion-content class="mahat-positioning padding" scroll="false" ng-controller="responseController">
+                   
+        <img class="mahat" src="img/mahat.png" alt="Mahat" ng-click="tap()">
+        <p class="saying" ng-class="{&apos;show&apos;:answered}">{{saying}}</p>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>

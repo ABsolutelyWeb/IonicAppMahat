@@ -1,0 +1,45 @@
+/* Applies style to ion pane AKA the background. */
+.pane {
+  	background: url(https://s-media-cache-ak0.pinimg.com/736x/29/76/cb/2976cb21a3e7e2c2df7dff39b612388c.jpg) no-repeat center center;
+}
+
+/* Set the size of the png image */
+.mahat {
+	padding-right: 50px;
+}
+
+/* Show white text */
+.saying.show {
+	opacity: 1;
+}
+
+/* Text params */
+.saying {
+	padding: 20px;
+	color: white;
+	opacity: 0;
+	font-size: 20px;
+	transition: opacity 1s linear;
+	text-align: center;
+}
+
+/* Center everything (vertically and horizontally) */
+.mahat-positioning {
+    display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-flex-direction: column;
+}
